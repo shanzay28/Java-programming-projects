@@ -14,20 +14,16 @@ These projects demonstrate foundational programming concepts including:
 
 ## 📂 Projects Included
 
-### 1. Reverse Digits
-Reverses an integer using a custom method.
+1. [Reverse Digits](./Reverse-Digits) — Reverses an integer using a custom method.
 
-### 2. Age Calculator
-Calculates a person’s age based on birth date and current date using method parameters.
+2. [Age Calculator](./Age-Calculator) — Calculates age from birth date and current date using method parameters.
 
-### 3. Dice Simulation
-Simulates rolling a 10-sided die one million times and tracks frequency using arrays.
+3. [Dice Simulation](./Dice-Simulation) — Simulates rolling a 10-sided die one million times and tracks frequency using arrays.
 
-### 4. Grade Analyzer
-Reads up to 10 grades, calculates the average, and determines how many grades are above or below the average.
-### 5. Elevator Simulation
-Simulates a three-story elevator system using Object-Oriented Programming. 
-Demonstrates class design, encapsulation, constructors, method calls, and boundary validation logic.
+4. [Grade Analyzer](./Grade-Analyzer) — Reads up to 10 grades, calculates the average, and determines how many grades are above or below the average.
+
+5. [Elevator Simulation](./Elevator-Simulation) — Simulates a three-story elevator system using Object-Oriented Programming.
+
 
 ---
 📍 Developed by Shanzay Khan  
