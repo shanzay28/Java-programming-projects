@@ -1,0 +1,70 @@
+*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package gradeanalyzer;
+
+import java.util.Scanner;
+
+/**
+ * GradeAnalyzer.java
+ * Reads up to 10 grades from the user (negative number to stop),
+ * calculates the average, then counts how many grades are above/equal
+ * to and below the average.
+ */
+public class GradeAnalyzer {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        // Array to store up to 10 grades
+        double[] grades = new double[10];
+        int gradeCount = 0;
+        double total = 0.0;
+
+        System.out.println("Enter up to 10 grades (enter a negative number to stop):");
+
+        while (gradeCount < 10) {
+            System.out.print("Enter grade " + (gradeCount + 1) + ": ");
+            double grade = input.nextDouble();
+
+            if (grade < 0) {
+                break;
+            }
+
+            grades[gradeCount] = grade;
+            total += grade;
+            gradeCount++;
+        }
+
+        if (gradeCount == 0) {
+            System.out.println("No grades were entered.");
+            return;
+        }
+
+        double average = total / gradeCount;
+
+        int aboveOrEqual = 0;
+        int below = 0;
+
+        for (int i = 0; i < gradeCount; i++) {
+            if (grades[i] >= average) {
+                aboveOrEqual++;
+            } else {
+                below++;
+            }
+        }
+
+        System.out.println("\n--- Grades Entered ---");
+        for (int i = 0; i < gradeCount; i++) {
+            System.out.printf("Grade %d: %.1f%n", (i + 1), grades[i]);
+        }
+
+        System.out.printf("%nAverage grade: %.2f%n", average);
+        System.out.println("Grades above or equal to average: " + aboveOrEqual);
+        System.out.println("Grades below average:             " + below);
+
+        input.close();
+    }
+}
