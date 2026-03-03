@@ -25,10 +25,14 @@ Simulates rolling a 10-sided die one million times and tracks frequency using ar
 
 ### 4. Grade Analyzer
 Reads up to 10 grades, calculates the average, and determines how many grades are above or below the average.
+### 5. Elevator Simulation
+Simulates a three-story elevator system using Object-Oriented Programming. 
+Demonstrates class design, encapsulation, constructors, method calls, and boundary validation logic.
 
 ---
-Developed by Shanzay Khan
+📍 Developed by Shanzay Khan  
 B.S. Information Science – Data Science & Analytics  
+University of South Florida
 University of South Florida
 
 
