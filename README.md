@@ -33,9 +33,3 @@ Demonstrates class design, encapsulation, constructors, method calls, and bounda
 📍 Developed by Shanzay Khan  
 B.S. Information Science – Data Science & Analytics  
 University of South Florida
-University of South Florida
-
-
-📍 Developed by Shanzay Khan  
-B.S. Information Science – Data Science & Analytics  
-University of South Florida
