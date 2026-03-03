@@ -1,0 +1,30 @@
+*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+
+package dicesimulation;
+
+import java.security.SecureRandom;
+
+public class DiceSimulation {
+
+    public static void main(String[] args) {
+
+        SecureRandom random = new SecureRandom();
+        int[] frequency = new int[11];
+        final int NUM_ROLLS = 1_000_000;
+
+        for (int roll = 0; roll < NUM_ROLLS; roll++) {
+            int face = random.nextInt(10) + 1;
+            frequency[face]++;
+        }
+
+        System.out.printf("%-6s %s%n", "Face", "Frequency");
+        System.out.printf("%-6s %s%n", "====", "=========");
+
+        for (int face = 1; face <= 10; face++) {
+            System.out.printf("%-6d %d%n", face, frequency[face]);
+        }
+    }
+}
